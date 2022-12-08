@@ -5,5 +5,6 @@ using namespace std;
 
 int main(){
         string s = "textbook";
+        cout<<s;
         return 0;
 }
