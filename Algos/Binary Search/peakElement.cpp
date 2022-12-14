@@ -10,9 +10,11 @@ using namespace std;
         else{
             int peak = -1;
             int mid = (lb+ub)/2;
+            //Check if nums[mid] is peak element
             if((mid+1<len && mid-1>=0) && (nums[mid]>nums[mid+1] && nums[mid]>nums[mid-1])){
                 peak = mid;
             }
+            //Check if nums[mid] is corner element and is peak
             else if((mid+1<len && mid-1<0) && (nums[mid]>nums[mid+1])){
                 peak = mid;
             }
